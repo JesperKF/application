@@ -1,11 +1,19 @@
-import Box1 from "../components/Box1";
-import Rightside from "../components/Rightside";
+import Boxtwo from "./Boxtwo";
+import Boxthree from "./Boxthree";
+import Boxfour from "./Boxfour";
+import Boxfive from "./Boxfive";
 
-export default function Page() {
+const Rightside = () => {
   return (
-    <div className="flex h-screen w-screen">
-      <Box1 />
-      <Rightside />
+    <div className="w-1/2 h-full flex flex-col overflow-y-auto">
+      <div className="flex flex-col w-full">
+        <Boxthree />
+        <Boxfour />
+        <Boxfive />
+      </div>
+      <Boxtwo />
     </div>
   );
-}
+};
+
+export default Rightside;
