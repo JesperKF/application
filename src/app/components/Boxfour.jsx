@@ -12,13 +12,13 @@ const projects = [
 
 const Boxfour = () => {
   return (
-    <div className="w-full">
+    <div className="w-full border-b border-white ">
       <Accordion title="PROJECTS">
-        <ul className="w-full">
+        <ul className="w-full py-4">
           {projects.map((project) => (
             <li
               key={project.name}
-              className="text-2xl font-light border-b border-white/20 hover:bg-white/10 hover:text-gray-300"
+              className="text-2xl font-light border-b border-white/20 py-4 hover:bg-white/10 hover:text-gray-300"
             >
               <a
                 href={project.url}
